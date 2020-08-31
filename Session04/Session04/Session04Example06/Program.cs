@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Globalization;
 using System.Threading;
 
 namespace Session04Example06
@@ -58,6 +59,9 @@ namespace Session04Example06
 
             // Formattera datum, 
             Console.WriteLine($"{currentDateTime:yyyy-MM-dd}");
+
+            // Formattera datum på ett specifikt språk
+            Console.WriteLine(currentDateTime.ToString(CultureInfo.InvariantCulture));
 
             // Standardformattering
             Console.WriteLine(currentDateTime);
