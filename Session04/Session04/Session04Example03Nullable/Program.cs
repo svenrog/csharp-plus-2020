@@ -37,9 +37,14 @@ namespace Session04Example03Nullable
             double nanValue = double.NaN;
             double infinityValue = double.PositiveInfinity;
 
+            // Värde som överstiger datatypens lagringsförmåga, kommer automatiskt att tilldelas det lägsta värdet istället.
+            byte byteValue = 255;
+            byteValue += 1;
+
+            // Om man vill kontrollera att värdet inte överstigs används nyckelordet checked
             checked
             {
-                byte byteValue = 255;
+                byteValue = 255;
                 byteValue += 1;
             }
             
