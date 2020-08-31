@@ -47,8 +47,16 @@ namespace Session04Example03Nullable
                 byteValue = 255;
                 byteValue += 1;
             }
-            
 
+            // Det går även att använda nyckelordet unchecked, men då görs detta om man är i ett block som är markerat checked.
+            checked
+            {
+                byteValue = 255;
+                unchecked
+                {
+                    byteValue += 1;
+                }
+            }
         }
     }
 }
