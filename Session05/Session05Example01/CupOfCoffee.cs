@@ -10,7 +10,8 @@ namespace Session05Example01
         public static string DefaultBeanType = "Arabica";
         public static string[] BeanTypes;
 
-        public string BeanType;
+        // Normalt används properties
+        public string BeanType; /* { get; set; } */
         public bool Instant;
         public bool Milk;
         public byte SugarCubes;

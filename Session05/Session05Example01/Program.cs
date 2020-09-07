@@ -27,7 +27,31 @@ namespace Session05Example01
             myAnimal = (Animal)myBarnyardAnimal;
 
             Chicken myChicken = new Chicken(1);
-            
+
+
+            //För att skapa ett objekt med värden satta
+            CupOfCoffee myCupOfCoffe = new CupOfCoffee(false, 0)
+            {
+                BeanType = "Arabica",
+                Description = "Serve cold",
+                //Instant = false,
+                //Milk = false,
+                //SugarCubes = 0
+            };
+        }
+
+        public CupOfCoffee GetCupOfCoffee(bool milk, byte sugarCubes)
+        {
+            return new CupOfCoffee(milk, sugarCubes)
+            {
+                BeanType = GetRandomBeanType()
+            };
+        }
+
+        public string GetRandomBeanType()
+        {
+            var length = CupOfCoffee.BeanTypes.Length;
+            return CupOfCoffee.BeanTypes[new Random().Next(0, length)];
         }
     }
 }
