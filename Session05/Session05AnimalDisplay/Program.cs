@@ -12,14 +12,37 @@ namespace Session05AnimalDisplay
         {
             _tagCounter = 0;
 
-            List<Animal> animals = new List<Animal>();
+            Animal[] animals = new Animal[3];
+
+            // För att fylla arrayen automatiskt med 3 kycklingar
+            // kan man tex använda en for-loop
+            for (var i = 0; i < animals.Length; i++)
+            {
+                animals[i] = GetChicken(i);
+            }
+
+            // Man kan även skapa arrayer av mer specifika typer
+            // Men... då begränsas även vilken datatyp man kan tilldela till arrayen
+            Cow[] cows = new Cow[3];
+
+            //List<Animal> animals = new List<Animal>();
+            //List<Cow> cows;
+            //List<Chicken> chickens;
+
             ISet<string> typeOfAnimals = new HashSet<string>();
 
-            animals.Add(GetChicken(1));
-            animals.Add(GetChicken(2));
-            animals.Add(GetCow(1));
+            animals[0] = GetChicken(1);
+            animals[1] = GetChicken(2);
+            animals[2] = GetCow(1);
 
-            Console.WriteLine($"In my barnyard there are {animals.Count} animals.");
+            //Detta går ej, då chicken inte härstammar (ärver) från Cow
+            //cows[0] = GetChicken(1);
+
+            //animals.Add(GetChicken(1));
+            //animals.Add(GetChicken(2));
+            //animals.Add(GetCow(1));
+
+            Console.WriteLine($"In my barnyard there are {animals.Length} animals.");
 
             foreach (Animal animal in animals)
             {
@@ -51,9 +74,14 @@ namespace Session05AnimalDisplay
                 //}
 
                 string animalType = GetTypeName(animal);
-                IBarnyardAnimal barnyardAnimal = (IBarnyardAnimal)animal;
 
-                Console.WriteLine($"Found: 1 {animalType}, aged {animal.AgeInYears} years, tagged {barnyardAnimal.Tag}");
+                // Kan generera en InvalidCastException
+                //IBarnyardAnimal barnyardAnimal = (IBarnyardAnimal)animal;
+
+                // Man kan konvertera med as, om konvertering misslyckas blir värdet null
+                IBarnyardAnimal barnyardAnimal = animal as IBarnyardAnimal;            
+
+                Console.WriteLine($"Found: {animalType}, aged {animal.AgeInYears} years, tagged {barnyardAnimal.Tag}");
             }
         }
 
