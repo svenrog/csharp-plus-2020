@@ -6,8 +6,12 @@ namespace Session05AnimalDisplay
 {
     class Program
     {
+        static int _tagCounter;
+
         static void Main(string[] args)
         {
+            _tagCounter = 0;
+
             List<Animal> animals = new List<Animal>();
             ISet<string> typeOfAnimals = new HashSet<string>();
 
@@ -47,8 +51,9 @@ namespace Session05AnimalDisplay
                 //}
 
                 string animalType = GetTypeName(animal);
+                IBarnyardAnimal barnyardAnimal = (IBarnyardAnimal)animal;
 
-                Console.WriteLine($"Found: 1 {animalType}, aged {animal.AgeInYears} years");
+                Console.WriteLine($"Found: 1 {animalType}, aged {animal.AgeInYears} years, tagged {barnyardAnimal.Tag}");
             }
         }
 
@@ -60,12 +65,27 @@ namespace Session05AnimalDisplay
 
         static Cow GetCow(int ageInYears)
         {
-            return new Cow(ageInYears);
+            var cow = new Cow(ageInYears);
+
+            cow.Tag = GetTag();
+
+            return cow;
         }
 
         static Chicken GetChicken(int ageInYears)
         {
-            return new Chicken(ageInYears);
+            Chicken result = new Chicken(ageInYears);
+
+            result.FeedingArea = "Feeding area " + result.AgeInYears.ToString();
+            result.Tag = GetTag();
+
+            return result;
+        }
+
+        static string GetTag()
+        {
+            _tagCounter++;
+            return _tagCounter.ToString().PadLeft(3, '0');
         }
     }
 }
