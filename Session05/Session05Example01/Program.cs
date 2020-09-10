@@ -10,7 +10,12 @@ namespace Session05Example01
             var beanType = CupOfCoffee.DefaultBeanType;
 
             Animal myAnimal = new Chicken(1);
-            myAnimal = new Cow(2);
+            
+            //Kalla på metod
+            //myAnimal.EatFood() <-
+            //myAnimal.AgeInYears.ToString();
+
+            myAnimal = new Cow(1);
 
             // Tvingad datakonvertering
             // Genererar InvalidCastException
@@ -22,12 +27,12 @@ namespace Session05Example01
 
             IBarnyardAnimal myBarnyardAnimal = new Chicken(1);
             myBarnyardAnimal.FeedingArea = "Main yard";
+            myBarnyardAnimal.FeedingArea = "Feeding area " + myAnimal.AgeInYears.ToString();
             //myBarnyardAnimal.RestingArea = ""; går inte
 
             myAnimal = (Animal)myBarnyardAnimal;
 
             Chicken myChicken = new Chicken(1);
-
 
             //För att skapa ett objekt med värden satta
             CupOfCoffee myCupOfCoffe = new CupOfCoffee(false, 0)
