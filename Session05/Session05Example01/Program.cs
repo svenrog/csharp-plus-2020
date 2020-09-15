@@ -28,16 +28,17 @@ namespace Session05Example01
 
             Chicken myChicken = new Chicken(1);
 
-
             //För att skapa ett objekt med värden satta
             CupOfCoffee myCupOfCoffe = new CupOfCoffee(false, 0)
             {
                 BeanType = "Arabica",
                 Description = "Serve cold",
-                //Instant = false,
-                //Milk = false,
+                Instant = false,
+                Milk = true,
                 //SugarCubes = 0
             };
+
+            Console.WriteLine($"{myCupOfCoffe}");
         }
 
         public CupOfCoffee GetCupOfCoffee(bool milk, byte sugarCubes)

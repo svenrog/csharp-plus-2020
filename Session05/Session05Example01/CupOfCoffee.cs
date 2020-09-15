@@ -54,6 +54,20 @@ namespace Session05Example01
 
         }
 
+        public override string ToString()
+        {
+            var builder = new StringBuilder($"{BeanType}");
+
+            if (!string.IsNullOrEmpty(Description))
+                builder.Append($", {Description}");
+
+            if (SugarCubes > 0)
+                builder.Append($", {SugarCubes} sugars");
+
+            if (Milk) builder.Append(", add milk");
+
+            return builder.ToString();
+        }
 
 
     }
