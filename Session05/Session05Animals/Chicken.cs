@@ -30,6 +30,8 @@ namespace Session05Animals
         // => är en genväg för att skriva en get-instruktion
         public string RestingArea => _restingArea;
 
+        public string Tag { get; set; }
+
         public override void EatFood()
         {
            /* Implementation av metoden */

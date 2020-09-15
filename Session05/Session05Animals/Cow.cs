@@ -4,8 +4,10 @@ using System.Text;
 
 namespace Session05Animals
 {
-    public class Cow : Animal
+    public class Cow : Animal, IBarnyardAnimal
     {
+        private string _restingArea;
+
         /// <summary>
         /// Creates an instance of a Cow object
         /// </summary>
@@ -13,6 +15,12 @@ namespace Session05Animals
         public Cow(int ageInYears) : base(ageInYears)
         {
         }
+
+        public string Tag { get; set; }
+
+        public string RestingArea => _restingArea;
+
+        public string FeedingArea { get; set; }
 
         public override void EatFood()
         {
