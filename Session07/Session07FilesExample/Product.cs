@@ -1,11 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Session07FilesExample
 {
     class Product
     {
+        
         public int Id { get; set; }
         public string ProductNumber { get; set; }
         public string ProductName { get; set; }

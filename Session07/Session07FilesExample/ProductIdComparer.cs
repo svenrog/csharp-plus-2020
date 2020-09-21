@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Session07FilesExample
 {
-    class ProductNameComparer : IComparer<Product>
+    class ProductIdComparer : IComparer<Product>
     {
         public int Compare([AllowNull] Product x, [AllowNull] Product y)
         {
@@ -17,7 +17,7 @@ namespace Session07FilesExample
             if (y == null) return -1;
 
             if (x.Id > y.Id) return 1;
-            if (y.Id < y.Id) return -1;
+            if (x.Id < y.Id) return -1;
             
             return 0;
         }

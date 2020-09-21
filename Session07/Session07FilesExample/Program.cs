@@ -39,8 +39,8 @@ namespace Session07FilesExample
             {
                 using (StreamReader reader = new StreamReader(stream))
                 {
-                    string line = reader.ReadLine();
-                    while (line != null)
+                    string line; // = reader.ReadLine();
+                    while ((line = reader.ReadLine()) != null)
                     {
                         // Logik för raden
                         string[] columns = line.Split(_separator);
@@ -57,8 +57,6 @@ namespace Session07FilesExample
                         {
                             Console.WriteLine(ex.Message);
                         }
-
-                        line = reader.ReadLine();
                     }
                 }
             }
@@ -97,7 +95,7 @@ namespace Session07FilesExample
                 Id = Convert.ToInt32(columns[0]),
                 ProductNumber = columns[2],
                 ProductName = columns[3],
-                ProductBrand = ConvertToNullableInt(columns[4]),
+                ProductBrand = ConvertToNullableInt(columns[4]) ?? 5,
                 ProductSupplier = columns[5],
                 ProductSynonyms = ConvertToArray(columns[6])
             };
