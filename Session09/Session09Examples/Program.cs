@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Session09Examples.Models;
+using System;
 using System.Collections;
 
 namespace Session09Examples
@@ -10,6 +11,10 @@ namespace Session09Examples
             // Värdetyp
             int integer;
             System.Int32 integerWithoutAlias;
+
+            int myNewInteger = 0;
+            int myAdditionalInteger = 0;
+            int myNextInteger = 0;
 
             int maxValue = int.MaxValue;
             int minValue = int.MinValue;
