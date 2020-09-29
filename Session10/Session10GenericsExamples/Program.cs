@@ -135,7 +135,7 @@ namespace Session10GenericsExamples
 
             var parsedValue = GetValue<double>("1");
 
-            var convertedValue = ConvertValue<Product, int>(new Product(1));
+            //var convertedValue = ConvertValue<Product, int>(new Product(1));
 
             var convertedValue2 = Convert.ChangeType(new Product(1), typeof(int));
         }
