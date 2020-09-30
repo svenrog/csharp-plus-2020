@@ -1,0 +1,156 @@
+[
+  {
+    "Id": "5584e0f0-925b-4e0d-b6f3-c49d405edc28",
+    "Name": "Thousand Heritage Collection – Coastal Blue",
+    "DisplayName": "Thousand – Coastal Blue",
+    "AvailableFrom": "2020-11-09T17:38:33.4703888Z",
+    "AvailableUntil": null,
+    "UnitPrice": {
+      "Amount": 1179.0,
+      "Currency": "SEK"
+    },
+    "AvailableInMarkets": [
+      "SE"
+    ],
+    "Properties": [
+      {
+        "Name": "Description",
+        "Value": "Designade för den urbana stadsmiljön, de minimalistiska Heritage-hjälmarna är Thousands ursprungliga kollektion, inspirerade av enkelheten i motorcykelhjälmarna och vintagefärgerna från 50- och 60-talet."
+      },
+      {
+        "Name": "DelieveryNote",
+        "Value": "Frakttider för Sverige: 2-4 dagar. Beroende på paket skickar vi med Schenker, DHL eller Postnord inom Sverige."
+      },
+      {
+        "Name": "DeliveryFromDays",
+        "Value": 2
+      },
+      {
+        "Name": "DeliveryToDays",
+        "Value": 4
+      }
+    ],
+    "Sizes": [
+      "S",
+      "M",
+      "L"
+    ]
+  },
+  {
+    "Id": "5ab4830f-09e9-4b41-a4d7-d9cebc36071f",
+    "Name": "Exway X1 Pro Riot",
+    "DisplayName": null,
+    "AvailableFrom": "2020-08-09T17:38:33.4712739Z",
+    "AvailableUntil": null,
+    "UnitPrice": {
+      "Amount": 11499.0,
+      "Currency": "SEK"
+    },
+    "AvailableInMarkets": [
+      "SE"
+    ],
+    "Properties": [
+      {
+        "Name": "Description",
+        "Value": "Exway X1 Pro Riot är en bältdriven version av den populära Exway X1 Pro. En elegant, men otroligt kraftfull elbräda med snabb acceleration, hög maxhastighet, kraftfull bromsrespons och den är dessutom kompatibel med de allra flesta populära hjulen på marknaden."
+      },
+      {
+        "Name": "ProductSoldOut",
+        "Value": true
+      }
+    ],
+    "Sizes": [
+      "OneSize"
+    ]
+  },
+  {
+    "Id": "75a5e2b5-624b-4e1d-876a-0577d25bbfe2",
+    "Name": "Super73-SG1-BLK",
+    "DisplayName": "Super73 – SG1, Black",
+    "AvailableFrom": "2020-08-09T17:38:33.4712777Z",
+    "AvailableUntil": "2021-08-09T17:38:33.4712779Z",
+    "UnitPrice": {
+      "Amount": 24999.0,
+      "Currency": "SEK"
+    },
+    "AvailableInMarkets": [
+      "SE",
+      "NO"
+    ],
+    "Properties": [
+      {
+        "Name": "Description",
+        "Value": "Super73-SG1 är en kraftfull och tålig ”urban cruiser” och är utrustad med ett avtagbart 48V 8,8 Ah-batteri som tar dig 30-40 kilometer. Glid fram med känslan av en motorcykel med den inbyggda 250w hubbmotorn som är begränsad till 25km/h. Det spelar ingen roll om du ska till affären eller till stranden Super73 tar dig dit utan ansträngning."
+      },
+      {
+        "Name": "ProductSoldOut",
+        "Value": true
+      }
+    ],
+    "Sizes": [
+      "OneSize"
+    ]
+  },
+  {
+    "Id": "a4803d7f-647b-425b-974f-1c3a2c39deda",
+    "Name": "Bones Bearings – Reds",
+    "DisplayName": null,
+    "AvailableFrom": "2020-08-12T17:38:33.4713971Z",
+    "AvailableUntil": null,
+    "UnitPrice": {
+      "Amount": 249.0,
+      "Currency": "SEK"
+    },
+    "AvailableInMarkets": [
+      "SE"
+    ],
+    "Properties": [
+      {
+        "Name": "Description",
+        "Value": "8st kullager från Bones Bearings."
+      },
+      {
+        "Name": "DelieveryNote",
+        "Value": "Frakttider för Sverige: 2-4 dagar. Beroende på paket skickar vi med Schenker, DHL eller Postnord inom Sverige."
+      },
+      {
+        "Name": "DeliveryFromDays",
+        "Value": 2
+      },
+      {
+        "Name": "DeliveryToDays",
+        "Value": 4
+      },
+      {
+        "Name": "ProductSoldOut",
+        "Value": true
+      }
+    ],
+    "Sizes": [
+      "OneSize"
+    ]
+  },
+  {
+    "Id": "e140d24d-3304-4890-b4a5-7d01183c4d44",
+    "Name": "Teamgee H6 Elektrisk Skateboard",
+    "DisplayName": null,
+    "AvailableFrom": "2020-09-09T17:38:33.471425Z",
+    "AvailableUntil": null,
+    "UnitPrice": {
+      "Amount": 5999.0,
+      "Currency": "SEK"
+    },
+    "AvailableInMarkets": [
+      "SE"
+    ],
+    "Properties": [
+      {
+        "Name": "Description",
+        "Value": "Ultratunn premium pintail elektrisk skateboard.\r\nEn elektrisk skateboard som ser ut som en vanlig skateboard med en ”old school”-karakteristisk pintail-bräda och grym design."
+      }
+    ],
+    "Sizes": [
+      "OneSize"
+    ]
+  }
+]
